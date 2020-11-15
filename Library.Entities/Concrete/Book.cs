@@ -14,5 +14,10 @@ namespace Library.Entities.Concrete
         public string Description { get; set; }
         public int Year { get; set; }
         public int CategoryId { get; set; }
+
+        public override string ToString()
+        {
+            return $"{Title,-100} {Year,-10}";
+        }
     }
 }
