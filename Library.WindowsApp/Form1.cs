@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Library.DataAccess.Concrete.EntitiyFramework;
+using Library.Entities.Concrete;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,7 +21,8 @@ namespace Library.WindowsApp
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            
+            LibraryDBContext context = new LibraryDBContext();
+            dgvBooks.DataSource = context.Books.ToList();
         }
     }
 }
