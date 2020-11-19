@@ -54,6 +54,8 @@
   <ItemGroup>
     <Compile Include="Abstract\IBookDal.cs" />
     <Compile Include="Abstract\IEntitiyRepository.cs" />
+    <Compile Include="Abstract\ICategoryDal.cs" />
+    <Compile Include="Concrete\EntitiyFramework\EfCategoryDal.cs" />
     <Compile Include="Concrete\EntitiyFramework\EfBookDal.cs" />
     <Compile Include="Concrete\EntitiyFramework\EfRepositoryBase.cs" />
     <Compile Include="Concrete\EntitiyFramework\LibraryDBContext.cs" />
@@ -66,10 +68,6 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Library.Business\Library.Business.csproj">
-      <Project>{07baedae-4448-4347-8514-58e2a49008b5}</Project>
-      <Name>Library.Business</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Library.Entities\Library.Entities.csproj">
       <Project>{d71c5109-81ba-40da-a6b8-97d2572408ad}</Project>
       <Name>Library.Entities</Name>
