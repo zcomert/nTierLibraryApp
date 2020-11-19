@@ -91,6 +91,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Library.Business\Library.Business.csproj">
+      <Project>{07baedae-4448-4347-8514-58e2a49008b5}</Project>
+      <Name>Library.Business</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Library.DataAccess\Library.DataAccess.csproj">
       <Project>{559410b6-9ec7-4bda-9041-745963122822}</Project>
       <Name>Library.DataAccess</Name>
